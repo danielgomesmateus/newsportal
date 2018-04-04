@@ -1,0 +1,15 @@
+{
+  "name": "news_portal",
+  "version": "1.0.0",
+  "description": "Sistema de notícias com NODEJS",
+  "main": "noticia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Gomes Mateus",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
