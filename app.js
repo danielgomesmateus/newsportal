@@ -1,27 +1,10 @@
-var express = require('express');
-var app = express();
+var app = require('./config/server')();
 
-var msg = require('./node_teste');
-
-
-app.set('view engine', 'ejs');
-
-app.get('/', function(request, response){
-
-	response.render('home/index');
-});
-
-app.get('/admin/news/add', function(request, response){
-
-	response.render('admin/form_add_news');
-});
-
-app.get('/news', function(request, response){
-
-	response.render('news/news');
-});
+var routeHome = require('./app/routes/home')(app);
+var routeNews = require('./app/routes/news')(app);
+var routeAdmin = require('./app/routes/admin')(app);
 
 app.listen(8080, function(){
 
-	console.log(msg());
+	console.log("Servidor NODEJS iniciado!");
 });
