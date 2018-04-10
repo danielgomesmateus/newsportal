@@ -1,12 +1,17 @@
 var db = require('mysql');
 
-module.exports = function() {
-
+var conn_db = function() {
+	
 	return db.createConnection({
 		
 		host: 'localhost',
 		user: 'root',
 		password: 'pirate89',
 		database: 'db_node'
-	});
+	});	
+}
+
+module.exports = function() {
+
+	return conn_db;
 }	

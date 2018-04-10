@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="utf-8"/>
-			<title>Formulário de cadastro de Notícia</title>
-		</head>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Formul&aacute;rio de cadastro de Not&iacute;cia
+		</title>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	</head>
 	<body>
-
-		<h1>Adicionar notícia</h1>
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+					<h1 class="title-page">
+						Adicionar not&iacute;cia
+					</h1>
+				</div>
+				<div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
+					<form method="POST" action="/admin/news/add">
+						<div class="form-group">
+							<label>
+								T&iacute;tulo:
+							</label>
+							<input type="text" class="form-control" required="required" name="title" placeholder="T&iacute;tulo da not&iacute;cia">
+						</div>
+						<div class="form-group">
+							<label>
+								Conte&uacute;do:
+							</label>
+							<textarea name="content" class="form-control" required="required" ></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-success" value="Cadastrar">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="footer">
+					Desenvolvendo com NODEJS
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

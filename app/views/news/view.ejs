@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
-		<head>
-			<meta charset="utf-8"/>
-			<title>Portal de notícias</title>
-		</head>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			Not&iacute;cias - Desenvolvimento com NODEJS
+		</title>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	</head>
 	<body>
-
-		<h1>Notícia</h1>
-
+		<div class="header">
+			<h1 class="title-page">
+				Not&iacute;cias
+			</h1>
+		</div>
+		<div class="list-results">
+			<ul>
+				<li>
+					<div class="title-news">
+						<%= data[0].title %>
+					</div>
+					<div class="content-news">
+						<%= data[0].content %>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			Desenvolvendo com NODEJS
+		</div>
 	</body>
 </html>
