@@ -10,9 +10,9 @@ module.exports = function(app) {
 		var data = request.body;
 
 		var connection_db = app.config.db();
-		var newsModel = app.app.models.news.newsModel;
+		var newsModel = new app.app.models.news.newsModel(connection_db);
 
-		newsModel.newsAdd(data, connection_db, function(error, result) {
+		newsModel.newsAdd(data, function(error, result) {
 
 			response.redirect('/news/');
 		});

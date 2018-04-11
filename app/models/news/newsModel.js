@@ -1,19 +1,24 @@
-module.exports = function(app) {
+function newsModel(connection) {
 
-	this.getNews = function(connection, callback) {
+	this._connection = connection;
+}
 
-		connection.query("select title, content from news", callback);
-	}
+newsModel.prototype.getNews = function(callback) {
 
-	this.getNewsById = function(connection, callback) {
+	this._connection.query("select title, content from news", callback);
+}
 
-		connection.query("select title, content from news where id = 1", callback);
-	}
+newsModel.prototype.getNewsById = function(callback) {
 
-	this.newsAdd = function(data, connection, callback) {
+	this._connection.query("select title, content from news where id = 1", callback);
+}
 
-		connection.query("insert into news set ?", data, callback);
-	}
+newsModel.prototype.newsAdd = function(data, callback) {
 
-	return this;
+	this._connection.query("insert into news set ?", data, callback);
+}
+
+module.exports = function() {
+
+	return newsModel;
 }
