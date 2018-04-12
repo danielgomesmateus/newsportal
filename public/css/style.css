@@ -1,7 +1,6 @@
 .header,
 .list-results {
 	margin: 0 auto;
-	width: 650px;
 	background: #E5E5E5;
 }
 
@@ -45,4 +44,12 @@ ul {
     padding: 10px;
     text-align: center;
     font-size: 13px;
+}
+
+.content-resume {
+    font-weight: bold;
+}
+
+.links-home {
+	margin-bottom: 15px;
 }

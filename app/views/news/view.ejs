@@ -9,25 +9,33 @@
 		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 	</head>
 	<body>
-		<div class="header">
-			<h1 class="title-page">
-				Not&iacute;cias
-			</h1>
-		</div>
-		<div class="list-results">
-			<ul>
-				<li>
-					<div class="title-news">
-						<%= data[0].title %>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+					<h1 class="title-page">
+						Not&iacute;cias
+					</h1>
+					<div class="list-results">
+						<ul>
+							<li>
+								<div class="title-news">
+									<%= data[0].title %>
+								</div>
+								<div class="content-news">
+									<%= data[0].content %>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<div class="content-news">
-						<%= data[0].content %>
-					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
-		<div class="footer">
-			Desenvolvendo com NODEJS
+		<div class="container-fluid">
+			<div class="row">
+				<div class="footer">
+					Desenvolvendo com NODEJS
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

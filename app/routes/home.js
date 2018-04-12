@@ -2,6 +2,6 @@ module.exports = function(app) {
 	
 	app.get('/', function(request, response){
 
-		response.render('../views/home/index');
+		app.app.controllers.homeController.home_index(app, request, response);
 	});
 }
