@@ -9,7 +9,7 @@ https://www.udemy.com/curso-completo-do-desenvolvedor-nodejs
 Primeiro passo é clonar o projeto. Para isto, na pasta do projeto, utilize o comando abaixo.
 
 ```
-git clone https://github.com/danielgomesmateus/mmorpg.git
+git clone https://github.com/danielgomesmateus/newsportal.git
 ```
 
 ### Pré requisitos
