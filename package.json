@@ -2,7 +2,7 @@
   "name": "news_portal",
   "version": "1.0.0",
   "description": "Sistema de notícias com NODEJS",
-  "main": "noticia.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
